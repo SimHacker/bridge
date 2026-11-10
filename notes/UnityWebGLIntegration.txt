@@ -1,0 +1,9 @@
+https://medium.com/@depanther/unity-webgl-secrets-b6ddf214f1fd
+
+https://github.com/De-Panther/unity-webxr-export/blob/ac4bcd60b25a9f4787b64fb3b26e411f9c5acc04/Packages/webxr/Runtime/Plugins/WebGL/webxr.jspre
+
+https://github.com/De-Panther/unity-webxr-export/blob/ac4bcd60b25a9f4787b64fb3b26e411f9c5acc04/Packages/webxr/Runtime/Plugins/WebGL/webxr.jslib
+
+https://forum.unity.com/threads/breaking-changes-in-5-6.470183/
+
+https://emscripten.org/docs/porting/connecting_cpp_and_javascript/Interacting-with-code.html

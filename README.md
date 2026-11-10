@@ -1,10 +1,10 @@
 # **Json Unity Bridge**
 
-This repo "bridge_unity" contains a JSON/C# Bridge for for controlling
+This repo "bridge" contains a JSON/C# Bridge for for controlling
 and interrogating Unity3D via HTTP (and other transport protocols).
 
 It's based on the open source UnityJS project I (Don Hopkins)
-developed over a few years, which I have used for a few projects.
+developed over several years, which I have used for various projects.
 
 This version uses a simple open source Unity HTTP server
 (UniWebServer) for communication. It can also talk through other
@@ -12,10 +12,10 @@ channels like SocketIO or directly to the JavaScript interpreter in
 the web browser (for WebGL builds), or create its own JavaScript
 interpreter (for iOS, Android, and desktop builds).
 
-This is a generic messaging bridge, completely data driven, using C#
-reflection, so you can query almost any property and send almost any
-message to any object with any parameter and convert any kind of data
-structures to and from json.
+This is a universal generic messaging bridge, completely data driven,
+using C# reflection, so you can query almost any property and send
+almost any message to any object with any parameter and convert any
+kind of data structures to and from json.
 
 And it's easy to plug in custom json converters extending JSON.Net's
 wonderful JSON converter system (which I've already done for many
@@ -25,11 +25,6 @@ several years, so it's pretty solid code).
 There are also a bunch of handy extension methods that make it more
 convenient to do common stuff with JSON.net. It's a lot more powerful
 and flexible than Unity's JSONUtility stuff.
-
-It may be useful for replacing a lot of the MTPLink and the studio
-server code, and it will be very useful to get new projects up and
-running, since it enables us to control and debug the app remotely
-over http, without writing a bunch of user interface crap.
 
 There is some more documentation and architectural overview in the
 original UnityJS repo:
@@ -183,12 +178,7 @@ suggestions about how to improve it!
 
 # **Installation**
 
-+ `cd mtp_runtime/Assets`
-+ `ln -s ../../bridge/Bridge`
-+ `ln -s ../../bridge/StreamingAssets`
-+ `ln -s ../../bridge/ThirdParty/UniWebServer`
-+ `ln -s ../../bridge/ThirdParty/JsonDotNet`
-
++ Add required Unity packages with the package manager. [TODO]
 + Add the Bridge prefab into the scene. Point its targetTransform at the top level object you want to expose (i.e. MindtwinManager).
 
 # ***Examples***
